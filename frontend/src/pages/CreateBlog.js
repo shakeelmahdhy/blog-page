@@ -20,7 +20,7 @@ function CreateBlog() {
 
     try {
       const response = await axios.post(
-        'http://localhost:8000/posts',
+        'https://blog-page-mdy9.onrender.com',
         { title, content },
         {
           headers: {
