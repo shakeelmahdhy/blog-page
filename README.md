@@ -50,7 +50,7 @@ An integrated full-stack blog website built with **FastAPI**, **PostgreSQL**, an
    
 ```bash
 python -m venv venv
-source venv/bin/activate      # On Windows use: venv\Scripts\activate
+venv\Scripts\activate     # On Linux or Mac use: source venv/bin/activate
 ```
 3. **Install Dependencies:**
    
