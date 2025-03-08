@@ -1,6 +1,6 @@
 # Blog Website
 
-An integrated full-stack blog website built with **FastAPI**, **PostgreSQL**, and **React**. This project features user authentication (JWT-based), blog post management (create, update, delete, view), threaded comments with reactions, full-text search, and user profile management. The frontend is built with React and is configured for static hosting (such as GitHub Pages), while the backend is a dynamic FastAPI server.
+An integrated full-stack blog website built with **FastAPI**, **PostgreSQL**, and **React**. This project features user authentication (JWT-based), blog post management (create, update, delete, view), threaded comments with reactions, full-text search, and user profile management. The frontend is built with React, while the backend is a dynamic FastAPI server.
 
 ## Table of Contents
 
