@@ -5,16 +5,10 @@ An integrated full-stack blog website built with **FastAPI**, **PostgreSQL**, an
 ## Table of Contents
 
 - [Features](#features)
-- [Project Structure](#project-structure)
 - [Prerequisites](#prerequisites)
 - [Local Setup & Running](#local-setup--running)
   - [Backend Setup](#backend-setup)
   - [Frontend Setup](#frontend-setup)
-- [Deployment](#deployment)
-  - [Deploying the Frontend to GitHub Pages](#deploying-the-frontend-to-github-pages)
-  - [Deploying the Backend](#deploying-the-backend)
-- [Environment Variables](#environment-variables)
-- [License](#license)
 
 ## Features
 
