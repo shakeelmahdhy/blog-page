@@ -13,7 +13,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://blog-page-mdy9.onrender.com"],
+    allow_origins=["https://blog-page-lemon-ten.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
