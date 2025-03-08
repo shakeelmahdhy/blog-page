@@ -53,25 +53,56 @@ An integrated full-stack blog website built with **FastAPI**, **PostgreSQL**, an
    cd your-repo-name/backend
 
 2. **Create & Activate a Virtual Environment:**
+   
 ```bash
 python -m venv venv
 source venv/bin/activate      # On Windows use: venv\Scripts\activate
 ```
-Install Dependencies:
-
+3. **Install Dependencies:**
+   
+```bash
 pip install -r requirements.txt
-
-Configure Environment Variables:
+```
+4. **Configure Environment Variables:**
+   
 Create a .env file in the backend/ folder with the following content (update the values accordingly):
 
+```bash
 DATABASE_URL=postgresql://user:password@localhost/blog_db
 SECRET_KEY=your_secret_key
+```
 
-Ensure Your PostgreSQL Database is Running:
+5. Ensure Your PostgreSQL Database is Running:
+   
 Create a database named blog_db (or update the DATABASE_URL in your .env file).
 
-Run the Backend Server:
+6. Run the Backend Server:
 
+```bash
 uvicorn main:app --reload
-
+```
 The FastAPI backend will be running on http://localhost:8000.
+
+
+Frontend Setup
+
+    Navigate to the Frontend Folder:
+
+cd ../frontend
+
+Install Dependencies:
+
+npm install
+
+Configure the API URL:
+In src/api/api.js, ensure the baseURL is set to your backend URL for local development:
+
+const api = axios.create({
+  baseURL: 'http://localhost:8000',
+});
+
+Start the React App:
+
+npm start
+
+The React app will run on http://localhost:3000 and communicate with the backend at http://localhost:8000.
