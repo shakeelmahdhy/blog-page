@@ -84,25 +84,31 @@ uvicorn main:app --reload
 The FastAPI backend will be running on http://localhost:8000.
 
 
-Frontend Setup
+### Frontend Setup
 
-    Navigate to the Frontend Folder:
+1. **Navigate to the Frontend Folder:**
 
+```bash
 cd ../frontend
+```
 
-Install Dependencies:
+2. **Install Dependencies:**
 
+```bash
 npm install
+```
 
-Configure the API URL:
+3. **Configure the API URL:**
+   
 In src/api/api.js, ensure the baseURL is set to your backend URL for local development:
-
+```bash
 const api = axios.create({
   baseURL: 'http://localhost:8000',
 });
+```
+4. **Start the React App:**
 
-Start the React App:
-
+```bash
 npm start
-
+```
 The React app will run on http://localhost:3000 and communicate with the backend at http://localhost:8000.
