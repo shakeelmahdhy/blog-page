@@ -34,7 +34,20 @@ An integrated full-stack blog website built with **FastAPI**, **PostgreSQL**, an
 - **User Dashboard & Profile:**  
   Dashboard for managing personal posts and comments, along with profile customization (avatar, bio, social links).
 
-## Project Structure
+## Prerequisites
 
-project-root/ ├── backend/ │ ├── .env # Environment variables (update with your credentials) │ ├── requirements.txt # Python dependencies │ ├── main.py # FastAPI entry point (with CORS & route integrations) │ ├── database.py # SQLAlchemy database setup │ ├── models.py # SQLAlchemy models for Users, Posts, Comments, Reactions │ ├── schemas.py # Pydantic schemas for input/output validation │ ├── auth.py # Authentication utilities (JWT creation/verification, password hashing) │ └── routes/
-│ ├── users.py # Endpoints: signup, token, profile, dashboard │ ├── posts.py # Endpoints: create, read, update, delete posts │ ├── comments.py # Endpoints: add, list, delete comments (threaded replies) │ ├── reactions.py # Endpoints: add reactions (like/dislike, emoji-based) │ └── search.py # Endpoint: full-text search on posts └── frontend/ ├── package.json # NPM dependencies & scripts (with homepage field) ├── public/ │ └── index.html # HTML entry point └── src/ ├── index.js # React entry point ├── App.js # Main app with routing ├── api/ │ └── api.js # Axios instance configured to call your backend ├── components/ │ ├── Auth/ │ │ ├── Login.js # Login form component │ │ └── Signup.js # Signup form component │ ├── Posts/ │ │ ├── PostList.js # List all posts │ │ ├── PostDetail.js # Detailed view of a single post (with comments & reactions) │ │ └── PostEditor.js # Form to create/edit posts │ └── Comments/ │ ├── CommentList.js # Lists threaded comments for a post │ └── CommentForm.js # Form to add a new comment or reply ├── pages/ │ ├── Dashboard.js # User dashboard (manage own posts/comments) │ └── Profile.js # User profile (avatar, bio, social links) └── utils/ └── auth.js # Helper functions for token storage & auth management
+- **Backend:**
+  - Python 3.8+  
+  - PostgreSQL
+- **Frontend:**
+  - Node.js (and npm)
+
+## Local Setup & Running
+
+### Backend Setup
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
+   cd your-repo-name/backend
