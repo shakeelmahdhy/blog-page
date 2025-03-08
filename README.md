@@ -51,3 +51,27 @@ An integrated full-stack blog website built with **FastAPI**, **PostgreSQL**, an
    ```bash
    git clone https://github.com/yourusername/your-repo-name.git
    cd your-repo-name/backend
+
+2. **Create & Activate a Virtual Environment:**
+```bash
+python -m venv venv
+source venv/bin/activate      # On Windows use: venv\Scripts\activate
+```
+Install Dependencies:
+
+pip install -r requirements.txt
+
+Configure Environment Variables:
+Create a .env file in the backend/ folder with the following content (update the values accordingly):
+
+DATABASE_URL=postgresql://user:password@localhost/blog_db
+SECRET_KEY=your_secret_key
+
+Ensure Your PostgreSQL Database is Running:
+Create a database named blog_db (or update the DATABASE_URL in your .env file).
+
+Run the Backend Server:
+
+uvicorn main:app --reload
+
+The FastAPI backend will be running on http://localhost:8000.
